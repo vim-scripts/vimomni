@@ -1,6 +1,6 @@
 
 " Plugin:  Vim Omni Completion
-" Version: 0.13
+" Version: 0.14
 " Author:  Cornelius (林佑安)
 
 let s:builtin_function_list =  [ "abs(", "add(", "append(", "argc(", "argidx(",
@@ -335,15 +335,18 @@ fun! VimOmniComplete(findstart, base)
         cal extend(comps,s:builtin_function_list)
         cal extend(comps,f_comps)
         cal extend(comps,s:RuntimeFunList())
+
       " expr context
-      elseif t =~ '=' || t =~ '[+-/*]' || t =~ '\w\+($'
+      elseif t =~ '[=+-/*]' || t =~ '\w\+($' || t =~ '^\(if\|else\|elseif\|while\|for\|in\)'
         cal extend(comps,v_comps)
         cal extend(comps,s:RuntimeVarList())
         cal extend(comps,s:builtin_function_list)
         cal extend(comps,f_comps)
         cal extend(comps,s:RuntimeFunList())
+      " option context
       elseif t =~ 'set'
         cal extend(comps,s:builtin_option_list)
+      " variable declare context
       elseif t =~ 'let'
         cal extend(comps,v_comps)
         cal extend(comps,s:RuntimeVarList())
