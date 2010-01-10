@@ -2,10 +2,11 @@
 author: Cornelius
 email: cornelius.howl@gmail.com
 libpath: .
-name: vimomni.vim
+name: vimlomni.vim
 repository: git://....../
+script_id: 2922
 type: ftplugin
-version: 0.1
+version: 0.12
 version_from: ftplugin/vim/omni.vim
 vim_version:
   op: '>='

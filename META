@@ -1,5 +1,5 @@
 
-=name           vimomni.vim
+=name           vimlomni.vim
 
 =author         Cornelius
 
@@ -12,5 +12,7 @@
 =vim_version    >= 7.2
 
 =libpath        .
+
+=script_id      2922
 
 =repository git://....../
