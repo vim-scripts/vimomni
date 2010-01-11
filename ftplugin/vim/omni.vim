@@ -1,7 +1,8 @@
 " vim:fdm=marker:
 " Plugin:  Vim Omni Completion
-" Version: 0.18
+" Version: 0.19
 " Author:  Cornelius (林佑安)
+" Email:   cornelius.howl@gmail.com
 
 " builtin function {{{
 let s:builtin_function_list =  [
@@ -318,7 +319,20 @@ let s:features = [
   \"xsmp_interact", "xterm_clipboard", "xterm_save", "\x11" ]
 "}}}
 
-let s:command_attr = [ '-nargs=0', '-nargs=1',  '-nargs=*',  '-nargs=?',  '-nargs=+' ]
+let s:command_attr = [ 
+      \'-range',
+      \'-range=%',
+      \'-range=',
+      \'-count=',
+      \'-bang',
+      \'-bar',
+      \'-register',
+      \'-buffer',
+      \'-nargs=0',
+      \'-nargs=1',
+      \'-nargs=*',
+      \'-nargs=?',
+      \'-nargs=+']
 
 let s:command_complete = [
     \'-complete=',	
