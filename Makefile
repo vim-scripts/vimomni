@@ -12,7 +12,7 @@
 
 # -------- meta section ------
 REPOSITORY = git://....../
-VERSION = 0.16
+VERSION = 0.17
 NAME = vimlomni.vim
 AUTHOR = Cornelius
 VERSION_FROM = ftplugin/vim/omni.vim
@@ -20,7 +20,7 @@ LIBPATH = .
 EMAIL = cornelius.howl@gmail.com
 TYPE = ftplugin
 SCRIPT_ID = 2922
-DISTNAME = vimlomni-vim-0.16
+DISTNAME = vimlomni-vim-0.17
 VIM_VERSION = 7.2
 
 
