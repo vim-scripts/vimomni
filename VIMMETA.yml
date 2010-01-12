@@ -6,7 +6,7 @@ name: vimomni.vim
 repository: git://....../
 script_id: 2922
 type: ftplugin
-version: 0.21
+version: 0.22
 version_from: ftplugin/vim/omni.vim
 vim_version:
   op: '>='
